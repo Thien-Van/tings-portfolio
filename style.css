@@ -1,0 +1,60 @@
+header {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+h1 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+nav {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+nav ul li {
+  list-style: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+section {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+.group {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+.item {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+h2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+p {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
