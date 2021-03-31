@@ -4,9 +4,6 @@ body {
 }
 
 header {
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
   background-color: #333333;
 }
 
@@ -15,19 +12,13 @@ h1 {
   font-size: 52px;
   color: white;
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
 }
 
 header nav ul {
@@ -35,17 +26,12 @@ header nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(0, 255, 85);
+  align-items: center;
 }
 
 header nav ul li {
   margin: 0 10px 0 10px;
   list-style: none;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
 }
 
 header nav ul a {
@@ -53,78 +39,89 @@ header nav ul a {
   font-size: 26px;
   color: white;
   text-decoration: none;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(0, 12, 187);
 }
 
 section {
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  margin: 0 10px 20px 10px;
+  padding-bottom: 30px;
 }
 
 .group {
   display: flex;
   flex-direction: column;
-
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
 }
 
 .groupReverse {
   display: flex;
   flex-direction: column;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
+  background-color: #333333;
+
+  color: white;
 }
 
 .item {
   flex: 1;
-  margin-bottom: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
-}
-
-h2 {
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
 }
 
 h3 {
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
-}
-
-p {
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
 }
 
 .item img {
   width: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
 }
 
-form input,
-form textarea {
+form {
+  margin: 0 30px 0 30px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  margin: 20px 0 5px 0;
+  color: gray;
+  font-family: arial;
+}
+form input {
   width: 100%;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 10rem;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 13px;
+}
+
+form button {
+  padding: 10px 16px;
+  border-radius: 3px;
+  border: 0;
+  font-family: Tahoma;
+  font-size: 16px;
+  background: grey;
+  color: #fff;
+  margin: 0 8px 10px 0;
 }
 
 footer {
   background-color: #333333;
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
 }
 
 footer h4 {
@@ -132,14 +129,14 @@ footer h4 {
   text-align: center;
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 800px) {
   header {
     display: flex;
     justify-content: space-between;
   }
 
   h1 {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 20px 10px;
     font-size: 45px;
   }
 
@@ -147,22 +144,36 @@ footer h4 {
     font-size: 22px;
   }
 
+  section {
+    margin: 10px 0 10px 0;
+  }
+
+  .subheader {
+    margin-left: 60px;
+  }
+
   .group {
     flex-direction: row;
+    padding: 0 50px 0 50px;
   }
 
   .groupReverse {
     flex-direction: row-reverse;
+    padding: 0 50px 0 50px;
   }
 
   .item {
     margin: 10px;
   }
 
-  form input {
-    flex: 1;
+  form {
+    margin: 0 100px 0 100px;
   }
-  form textarea {
-    flex: 2;
+}
+
+@media all and (min-width: 1400px) {
+  main {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
