@@ -1,5 +1,6 @@
 body {
   font-family: Roboto, Arial, sans-serif;
+  margin: 0;
 }
 
 header {
@@ -66,6 +67,15 @@ section {
 .group {
   display: flex;
   flex-direction: column;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+.groupReverse {
+  display: flex;
+  flex-direction: column;
   border-style: solid;
   border-width: 1px;
   border-color: red;
@@ -105,6 +115,11 @@ p {
   border-color: red;
 }
 
+form input,
+form textarea {
+  width: 100%;
+}
+
 footer {
   background-color: #333333;
   border-style: solid;
@@ -130,5 +145,24 @@ footer h4 {
 
   header nav ul a {
     font-size: 22px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  .groupReverse {
+    flex-direction: row-reverse;
+  }
+
+  .item {
+    margin: 10px;
+  }
+
+  form input {
+    flex: 1;
+  }
+  form textarea {
+    flex: 2;
   }
 }
