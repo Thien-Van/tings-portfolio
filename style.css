@@ -37,7 +37,7 @@ header nav ul li {
 
 header nav ul a {
   font-family: Times, serif;
-  font-size: 26px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
 }
@@ -107,7 +107,7 @@ form label {
   display: block;
   font-size: 16px;
   margin: 20px 0 5px 0;
-  color: gray;
+  color: #333333;
   font-family: arial;
 }
 
@@ -133,7 +133,7 @@ form button {
   border: 0;
   font-family: Tahoma;
   font-size: 16px;
-  background: grey;
+  background: #333333;
   color: #fff;
   margin: 0 8px 10px 0;
 }
