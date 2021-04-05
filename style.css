@@ -84,9 +84,23 @@ h3 {
   color: white;
 }
 
+/* contact links */
+
+.contact {
+  flex: 1;
+  text-align: center;
+  padding-bottom: 0;
+  padding-top: 30px;
+}
+
+.contactLink {
+  margin: 0;
+}
+
 /* form */
 form {
   margin: 0 30px 0 30px;
+  flex: 1;
 }
 
 form label {
@@ -172,8 +186,13 @@ footer h4 {
     margin: 10px;
   }
 
+  .contact {
+    flex: 1;
+    text-align: left;
+  }
+
   form {
-    margin: 0 100px 0 100px;
+    flex: 2;
   }
 }
 
