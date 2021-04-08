@@ -5,6 +5,7 @@ body {
 
 /* Header icluding h1 and nav */
 header {
+  margin-top: 0;
   background-color: #333333;
 }
 
@@ -13,7 +14,8 @@ h1 {
   font-size: 52px;
   color: white;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+  /* margin-bottom: 10px; */
 }
 
 header nav {
